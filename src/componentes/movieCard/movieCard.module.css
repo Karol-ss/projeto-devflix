@@ -1,12 +1,12 @@
 .movie{
-    width: 310px;
-    height: 460px;
+    width: 250px;
+    height: 380px;
     margin: 1.5rem;
     position: relative;
     overflow: hidden;
     border: none;
     box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
+    border-radius: 50px;
 
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -18,12 +18,12 @@
     width: 100%;
     opacity: 0;
     top: 0;
-    color: #f9d3b4;
+    color: #d98642;
 
 }
 
 .movie:hover{
-    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.4);
+   box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.4); 
     transform: scale(1.05,1.05);
 }
 
@@ -45,6 +45,7 @@
     bottom: 0;
     left: 0;
     right: 0;
+   
     padding: 16px 24px 24px;
 }
 
@@ -57,18 +58,18 @@
 }
 
 .movie div:nth-of-type(3) h3{
-    margin-top: 5px;
-    color: #f9d3b4;
+    margin-top: 10px;
+    color: #d98642;
 }
 
 .movie:hover div:nth-of-type(2){
     height: 100%;
-    opacity: 0.3;
+    
 }
 
-.movie:hover div:nth-of-type(3){
+/* .movie:hover div:nth-of-type(3){
     background: transparent;
-}
+} */
 
 .movie:hover div:nth-of-type(1){
     opacity: 1;

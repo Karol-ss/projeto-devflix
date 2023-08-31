@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./movieDescription.module.css";
-import devFlix from "/favicon.png";
+import devFlix from "/devflix-d.png";
 
 const MovieDesc = ({ movies, click }) => {
   const apiKey = "58c4d213";
@@ -37,7 +37,7 @@ const MovieDesc = ({ movies, click }) => {
                 )}`}
                 target="_blank"
               >
-                ▶️Assistir
+                ▶
               </a>
             </div>
           </div>

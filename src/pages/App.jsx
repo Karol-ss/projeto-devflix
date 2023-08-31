@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react"
 
-import logo from "../assets/devflix.png"
+
 import searchIcon from "../assets/search.svg"
+import menuIcon from "../assets/menu.svg"
+import logo from "../assets/devflix-banner.png"
 
 
 import "./App.css"
@@ -33,18 +35,22 @@ const App = () => {
      }
     
 
-    // fetch(apiUrl)
-    // .then((response) => response.json())
-    // .then((data) => console.log(data));
-
     return (
+        
+
         <div id="app">
+          
             <div className="logo">
                 <img src={logo} alt="Logo devflix" />
+            </div>
+            <div className="menuSearch">
+            <div className="menu">
+            <img src={menuIcon} alt="Icone de menu" onClick={() => "" }/> 
             </div>
             <div className="search">
                 <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={handleKeyPress}placeholder="Pesquise por filmes" />
                 <img src={searchIcon} alt="Icone de pesquisa" onClick={() => searchMovies(searchTerm)}/>
+            </div>
             </div>
         {movies?.length > 0 ? (
             <div className="container">
