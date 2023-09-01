@@ -9,10 +9,12 @@ import logo from "../assets/devflix-banner.png"
 import "./App.css"
 import MovieCard from "../componentes/movieCard/movieCard";
 import Footer from "../componentes/footer/footer";
+import Menu from "../componentes/menu/menu"
 
 const App = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [movies, setMovies] = useState([]);
+    const [isMenu, setIsMenu] = useState(true);
 
     const apiKey = "58c4d213";
     const apiUrl = `https://omdbapi.com/?apikey=${apiKey}`;
@@ -33,11 +35,13 @@ const App = () => {
      const handleKeyPress = (e) => {
         e.key === "Enter" && searchMovies(searchTerm)
      }
+
+     const toggleMenu = () =>{
+        setIsMenu(!isMenu);
+     }
     
 
     return (
-        
-
         <div id="app">
           
             <div className="logo">
@@ -45,7 +49,8 @@ const App = () => {
             </div>
             <div className="menuSearch">
             <div className="menu">
-            <img src={menuIcon} alt="Icone de menu" onClick={() => "" }/> 
+            <img  src={menuIcon} alt="Icone de menu" onClick={toggleMenu}/> 
+            {isMenu && <Menu click={toggleMenu} />  }
             </div>
             <div className="search">
                 <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={handleKeyPress}placeholder="Pesquise por filmes" />

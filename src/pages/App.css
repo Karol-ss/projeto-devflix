@@ -36,7 +36,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7B690D", en
 }
 
 .logo img{
-   width: 600px;
+   width: 400px;
    height: auto;
    margin: auto;
  
@@ -49,18 +49,21 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7B690D", en
     transition: all 0.4s;
 }
 
-.menuSearch{
-    width: 70%;
+.menuSearch {
     margin: 4rem 0 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1.5rem 1.75rem;
+    gap: 1em;
 }
 
+.menuSearch img{
+   font-size: 4em;
+}
 
 .search{
-    width: 70%;
+    width: 50em;
     
     display: flex;
     align-items: center;
@@ -125,6 +128,10 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7B690D", en
         width: 20px;
         height: 20px;
     }
+   
+    .logo img{
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 400px){
@@ -143,5 +150,9 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7B690D", en
     .movie {
         width: 100%;
         margin: 1rem;
+    }
+
+    .logo img{
+        width: 200px;
     }
 }
