@@ -14,7 +14,7 @@ import Menu from "../componentes/menu/menu"
 const App = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [movies, setMovies] = useState([]);
-    const [isMenu, setIsMenu] = useState(true);
+    const [isMenu, setIsMenu] = useState(false);
 
     const apiKey = "58c4d213";
     const apiUrl = `https://omdbapi.com/?apikey=${apiKey}`;
